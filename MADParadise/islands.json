@@ -1,0 +1,92 @@
+{
+	"menu" : {
+		"header" : "header",
+		"items" : [
+                   {
+                "category" : "philippines",
+				"islandName": "Boracay, Aklan: Party Central",
+                "imageURL" : "https://t360cdn.blob.core.windows.net/mediastaging/2013/12/Boracay-CC-BY-Rick-McCharles1.jpg",
+				"description": "The fine white sands that made this island world-famous invite you to leave your flip-flops behind and go barefoot in their powdery softness. Island hopping and water sports will fill your days with discovery and adventure, while at nightfall, candlelit sandcastles, fire dancers and music of all genres lend a fun and easy-going atmosphere over the island. Bring your friends or make new ones at the bar—the world parties here!",
+				"howToGetThere" : "AirAsia flies to Kalibo from Manila and Kuala Lumpur.  From Kalibo Airport, it takes 1–2 hours by bus/van (from PHP 200) to Caticlan Jetty and 20 minutes by boat (PHP25/100 depending on craft + PHP75 environmental fee + PHP100 terminal fee) to Boracay. From there, take a tricycle or van to your hotel (from PHP50.) Alternatively, if you are flying in from Manila, one-way island transfers are available onboard your flight for PHP520."
+                   },
+			{
+				"category" : "philippines",
+        		"islandName": "Apulit, El Nido and Taytay",
+                "imageURL" : "https://t360cdn.blob.core.windows.net/mediastaging/2013/12/El-Nido-CC-BY-Jack-Versloot1.jpg",
+				"description": "Once accessible only to the luxury travellers, El Nido and the islands off Taytay now welcome backpackers with a sense of adventure (and strong bottoms for rough roads). Snorkel and kayak amidst dramatic limestone cliffs and islands sans the crowds. You’ll surely discover your hiding place in this unspoilt paradise.",
+				"howToGetThere" : "AirAsia flies from Manila to Puerto Princesa. From Puerto Princesa Airport, take a van to El Nido town (5–6 hrs, PHP600–900)."
+                   },
+			{
+				"category" : "philippines",
+				"islandName": "Oslob, Cebu: Close Encounters",
+                "imageURL" : "https://t360cdn.blob.core.windows.net/mediastaging/2013/12/Whale-Shark-Oslob-Cebu-Jay-Kok1.jpg",
+				"description": "“SHARK!” If that cry doesn’t drive you away with the fear of Jaws, then you belong right here! Whale sharks, the largest fish on the planet, are sighted every morning off the shores of Oslob town. After swimming with these magnificent giants, stop over at Tumalog Waterfalls for a refreshing dip, Moalboal for diving and Carcar town for Spanish colonial houses, belly-busting lechon (whole roasted pig) and crunchy chicharon (deep-fried pork rind).",
+				"howToGetThere" : "AirAsia flies to Cebu from various destinations. From the airport, take a yellow coupon taxi  or a white metered taxi to Cebu South Bus Terminal (at least 30 mins, from PHP300) and catch a bus to Oslob (3 hrs, PHP120)."
+                   },
+			{
+				"category" : "philippines",
+				"islandName": "Panglao Island, Bohol: Beyond Beach Bumming",
+                "imageURL" : "https://t360cdn.blob.core.windows.net/mediastaging/2013/12/Pamilacan-2-CC-BY-Ronald-Belleza1.jpg",
+				"description": "Panglao Island is one of the main tourist destinations on the Philippines. Alona Beach is the most popular tourist spot on the island, noted for its white sand and clear water. Like Boracay, this place has become crowded due to opening of more and more restaurants and bars. There are also a lot of attractions to do for tourists such as scubadiving, island hopping, dolphin watching, snorkeling, kitesurfing and fishing.",
+				"howToGetThere" : "AirAsia flies from Manila to Tagbilaran, Bohol. From the airport, taxis (30–40 mins, from PHP500) and vans (PHP600 per van) are available to Panglao Island."
+                   },
+			{
+				"category" : "philippines",
+				"islandName": "Island Garden City of Samal, Davao del Norte: Beyond Pearls",
+                "imageURL" : "https://t360cdn.blob.core.windows.net/mediastaging/2013/12/Samal-Hagimit-CC-BY-Paul-Lewin1.jpg",
+				"description": "The Pearl Farm luxury resort isn’t the coastal paradise’s only draw. Step into “the island that has it all”, with lush green plains, enchanting mountains and cerulean seas to add to its claim. Travellers are discovering tranquil Hagimit Falls, the underwater colours of Talikud Island’s Coral Garden Marine Park, the high tide mangrove sandbar of Vanishing Island, and Monfort Bat Sanctuary, home of 2,000,000 fruit bats.",
+				"howToGetThere" : "AirAsia flies from Manila to Davao. From the airport, take a taxi to Santa Ana Wharf, Sasa Wharf or Sasa Ferryboat Landing (10–20 mins, under PHP200), depending on your destination. From there, take a motorboat or RORO ferries to Samal (15–45 mins, depending on resort location)."
+                   },
+			{
+				"category" : "philippines",
+				"islandName": "Camiguin: Sleeping Giant",
+                "imageURL" : "https://t360cdn.blob.core.windows.net/mediastaging/2013/12/Camiguin-2-CC-BY-Allan-Donque1.jpg",
+				"description": "Now you see it, now you don’t. The island’s best beach—actually a sandbar—appears only during low tide. This is only one of Camiguin’s many secrets, among them an underwater cemetery, church ruins, hot and cold springs, waterfalls, and the extinct remnants of ancient volcanoes. The popular cream-filled Pastel buns and sweet lanzones (langsat) fruits will have you snacking non-stop as you go on the island loop.",
+				"howToGetThere" : "AirAsia flies to Manila from various destinations. From Manila, take a domestic flight to Cagayan de Oro. Short route: From the airport, take a van to Cagayan de Oro city centre (PHP199, 45 mins–1hr). From there, it’s a 20-minute ride to Macabalan Port by taxi (PHP80) or jeepney (PHP7). Ride the Ocean Jet ferry (2 hrs, PHP550–PHP750, one trip daily at 8:30am) to Camiguin-Benoni Port.Long route: From the airport, take a van to Agora Bus Terminal (2–3 hrs, around PHP200). Hop aboard a Butuan-bound bus (2–3 hrs, PHP143) and alight at Balingoan Bus Terminal. Walk or take a motorela (PHP8) to Balingoan Ferry Port, where fast craft depart for Camiguin-Benoni Port (1 hr, PHP150). It is also possible to take a taxi (1.5 hrs, around PHP3000) straight to Balingoan from the airport."
+                   },
+			{
+				"category" : "philippines",
+				"islandName": "Tubbataha North Reef: The Last Frontier",
+                "imageURL" : "https://t360cdn.blob.core.windows.net/mediastaging/2013/12/iStock_000024977643Medium1.jpg",
+				"description": "Technically not an island but two large atolls in the Sulu Sea, Tubbataha is a World Heritage Site for its natural richness. Set at the apex of the Coral Triangle, it is described by divers as a true underwater jungle. Shark sightings are guaranteed and the sheer amount of marine life is among the best in the world. If you’re a marine explorer at heart, this should be on your bucket list. And if you don’t dive, it’s time to earn your certifications as this is for experienced divers only.",
+				"howToGetThere" : "AirAsia flies to Puerto Princesa from Manila. From Puerto Princesa, access to Tubbataha is via liveaboard only (10–12 hrs), arranged through accredited dive operators. Dive season is from mid-March to mid-June. Packages start at USD1600. Book in advance, as there are limited slots."
+                   },
+            {
+            	"category" : "seychelles",
+				"islandName": "Silhouette Island",
+                "imageURL" : "http://www.comfyclass.me/wp-content/uploads/2012/04/aerial5.jpg",
+				"description" : "Now designated a National Park, Silhouette is the third largest Seychelles island. Encircled by a coral reef, Silhouette is also a Marine National Park, making it ideal for snorkelling as well as diving or fishing. In March 2014, the Island Conservation Society recorded 571 turtle tracks on Silhouette island, found 316 nests with eggs and successfully tagged 31 turtles for the ICS turtle monitoring project."
+                   },
+			{
+				"category" : "seychelles",
+        		"islandName": "Victoria, Seychelles",
+                "imageURL" : "http://odmorplus.com/wp-content/uploads/2015/07/sejselska-ostrva-viktorija.jpg",
+				"description": "A day on foot is ample time to see Victoria, one of the smallest capitals in the world. Located on Mahe, one of the Seychelles' 115 granite and coral islands, Victoria is the republic's business and cultural hub. At its center sits the Victoria Clocktower, a national monument reminiscent of London's Big Ben that has kept ticking since 1903, unaffected by the modern glass and concrete development around it. Visit the local art galleries and craft markets to soak up the city's friendly charm."
+                   },
+			{
+				"category" : "seychelles",
+				"islandName": "Praslin Island",
+                "imageURL" : "http://ka7-tour.ru/wp-content/uploads/2012/04/2.jpg",
+				"description": "One of the Seychelles’ most popular destinations, Praslin is home to fantastic beaches and intimate hotels and resorts. Soak up the sun in style while you keep a sunglassed eye out for the very rare bird species that dwell on Praslin, including the Seychelles bulbul and the black parrot. Praslin National Park in the island's south contains the spectacular palm forest of Vallée de Mai. Divers love the ancient coral reefs off Praslin's shores."
+                   },
+			{
+				"category" : "seychelles",
+				"islandName": "La Digue",
+                "imageURL" : "http://www.villaveuve.com/wp-content/uploads/anse-source-dargent-beach-la-digue.jpg",
+				"description": "Arriving at La Digue feels like sailing straight into a painting, brimming with brush strokes of blue, green and tan. The beaches here are spectacular, particularly Grand Anse and Anse Source d'Argent, which is strewn with pink granite rocks. There are very few cars here, so traveling by bike or by ox cart is the way to go. Pedal over to Ile de Cocos for snorkeling or gawk at the rare Paradise Flycatcher (a beautiful black bird) at the Veuve Nature Reserve."
+                   },
+			{
+				"category" : "seychelles",
+				"islandName": "Mahe Island",
+                "imageURL" : "http://www.seychelles-resa.com/image/iles/B75A7240-6020-48DC-8A27-1B68A48ABDED.jpg",
+				"description": "The Seychelles largest and main island, Mahe is home to the capital of Victoria and about 70,000 people (almost 90% of the nation's total). Still, the island retains its idyllic beauty, with 3,000-foot mountains and scores of gorgeous beaches. Many plants, including the so-called Jellyfish Tree and several rare orchids, are unique to Mahe's shores. The Seychelles Natural History Museum, the Botanical Gardens and the Codevar Craft Centre, all in Victoria, are not to be missed."
+                   },
+			{
+				"category" : "seychelles",
+				"islandName": "Beau Vallon",
+                "imageURL" : "http://www.hanneman-seychelles.com/photo-hotel/D_bg.jpg",
+				"description": "Beau Vallon is a bay on the north western coast of Mahé in the Seychelles. Beau Vallon Beach is a very frequented and maybe the most popular on the island. It is known as a base for diving and snorkelling due to its clear waters and coral reefs. Besides many smaller hotels, it has three major ones - Le Meridien - Fisherman's Cove, the Berjaya Beau Vallon and the Coral Strand. Le Meridien is the site of the oldest hotel on Mahe (originally built in 1943 but several times refurbished) and the Coral Strand is one of the oldest as well, having been built directly on the beach prior to restrictions being put in place by the government. Towards the north is also the newly renovated Hilton-Northolme Hotel in the Glacis area."
+                   }
+                   ]
+    }
+}
