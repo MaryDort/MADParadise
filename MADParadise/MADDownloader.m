@@ -21,7 +21,7 @@
     return downloader;
 }
 
-- (void)loadDataWithURL:(NSURL *)URL complitionBlock:(void (^)(NSData *))complitionBlock {
+- (void)downloadDataWithURL:(NSURL *)URL complitionBlock:(void (^)(NSData *))complitionBlock {
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     NSURLSessionDataTask *sessionDownloadTask = [session dataTaskWithRequest:request

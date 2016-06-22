@@ -27,7 +27,7 @@
         return _managedObjectModel;
     }
     
-    NSURL *url = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"paradiceModel" ofType:@"momd"]];
+    NSURL *url = [NSURL URLWithString:[[NSBundle mainBundle] pathForResource:@"paradiseModel" ofType:@"momd"]];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:url];
     
     return _managedObjectModel;
@@ -88,9 +88,19 @@
     [self saveToStorage];
 }
 
-- (NSArray *)uniquenessCheck:(NSArray *)entities {
-    NSArray *islandsName = [entities valueForKeyPath:@"islandName"];
+- (NSArray *)uniquenessCheck:(NSArray *)islands {
+    NSArray *islandsName = [islands valueForKeyPath:@"islandName"];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"islandName IN %@", islandsName];
+    NSArray *response = [[self fetchingDistinctValueByPredicate:predicate] valueForKeyPath:@"islandName"];
+    NSPredicate *filterPredicate = [NSPredicate predicateWithBlock:
+                                    ^BOOL(NSDictionary *evaluatedObject, NSDictionary *bindings) {
+                                        return ![response containsObject:evaluatedObject[@"islandName"]];
+                                    }];
+    
+    return [islands filteredArrayUsingPredicate:filterPredicate];
+}
+
+- (NSArray *)fetchingDistinctValueByPredicate:(NSPredicate *)predicate {
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"MADIsland"
                                               inManagedObjectContext:self.managedObjectContext];
@@ -99,19 +109,14 @@
     request.sortDescriptors = [[NSArray alloc] init];
     
     NSError *error = nil;
-    NSArray *response = [self.managedObjectContext executeFetchRequest:request error:&error];
+    NSArray *array = [self.managedObjectContext executeFetchRequest:request error:&error];
+    
     if (error) {
         NSLog(@"%@", [error description]);
     }
-    
-    NSPredicate *filterPredicate = [NSPredicate predicateWithBlock:
-                                    ^BOOL(NSDictionary *evaluatedObject, NSDictionary *bindings) {
-                                        return ![response containsObject:evaluatedObject[@"islandName"]];
-                                    }];
-    
-    return [entities filteredArrayUsingPredicate:filterPredicate];
-}
 
+    return array;
+}
 
 - (void)saveToStorage {
     NSError *error;

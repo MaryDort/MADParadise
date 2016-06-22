@@ -20,7 +20,7 @@
 #import "CollectionCellButtonDelegate.h"
 #import "UICollectionView+NSFetchedResultsController.h"
 
-@interface MADCollectionViewController () <NSFetchedResultsControllerDelegate, UICollectionViewDelegateFlowLayout>
+@interface MADCollectionViewController () <NSFetchedResultsControllerDelegate, UICollectionViewDelegateFlowLayout, CollectionCellButtonDelegate>
 
 @property (weak, nonatomic, readwrite) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, readwrite, strong) NSFetchedResultsController *fetchedResultsController;
@@ -32,6 +32,8 @@
 @property (strong, nonatomic, readwrite) MADTransitionDelegate *transitionDelegate;
 @property (strong, nonatomic, readwrite) MADMapAnimator *mapAnimator;
 @property (strong, nonatomic, readwrite) MADDescriptionAnimator *descriptionAnimator;
+@property (assign, nonatomic, readwrite) CGSize currentViewSize;
+
 
 @end
 
@@ -64,6 +66,12 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.collectionView registerNib:[UINib nibWithNibName:@"MADCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
 }
 
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    
+    _currentViewSize = self.view.frame.size;
+}
+
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -85,7 +93,7 @@ static NSString * const reuseIdentifier = @"Cell";
     MADIsland *island = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     if (!island.image) {
-        [[MADDownloader sharedDownloader] loadDataWithURL:[NSURL URLWithString:island.imageURL] complitionBlock:^(NSData *imageData) {
+        [[MADDownloader sharedDownloader] downloadDataWithURL:[NSURL URLWithString:island.imageURL] complitionBlock:^(NSData *imageData) {
             island.image = imageData;
             cell.imageView.image = [UIImage imageWithData:imageData];
         }];
@@ -147,8 +155,21 @@ static NSString * const reuseIdentifier = @"Cell";
     return _fetchedResultsController;
 }
 
+#pragma mark -  protocolUICollectionViewDelegateFlowLayout
+
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(300.f, 300.f);
+    if (_currentViewSize.width > _currentViewSize.height) {
+        return CGSizeMake(_currentViewSize.width/2 - 10.f, _currentViewSize.height);
+    }
+    return CGSizeMake(_currentViewSize.width - 10.f, _currentViewSize.height/2);
+}
+
+- (void)viewWillTransitionToSize:(CGSize)size
+       withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    
+    _currentViewSize = size;
+    [self.collectionView.collectionViewLayout invalidateLayout];
 }
 
 #pragma mark - NSFetchedResultsControllerDelegate
@@ -195,9 +216,11 @@ static NSString * const reuseIdentifier = @"Cell";
     NSMutableArray *results = [[NSMutableArray alloc] init];
     
     for (CLPlacemark *placemark in placemarks) {
+        CLLocationDistance radius = [(CLCircularRegion*)placemark.region radius];
+        
         [results addObject:[[MADPlace alloc] initWithTitle:placemark.name
                                                 coordinate:placemark.location.coordinate
-                                                    region:placemark.region.radius]];
+                                                    region:radius]];
     }
     mapVC.annotatins = results;
     [self presentViewController:mapVC animated:YES completion:nil];

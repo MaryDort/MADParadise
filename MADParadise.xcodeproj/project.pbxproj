@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		16C07D23F0D7247196D800EA /* libPods-MADParadise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E044086D3320B461180E4E8 /* libPods-MADParadise.a */; };
 		84123A7A1D1432E5005DA7CE /* islands.json in Resources */ = {isa = PBXBuildFile; fileRef = 84123A791D1432E5005DA7CE /* islands.json */; };
-		84123A801D14508C005DA7CE /* paradiceModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84123A7E1D14508C005DA7CE /* paradiceModel.xcdatamodeld */; };
+		84123A801D14508C005DA7CE /* paradiseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84123A7E1D14508C005DA7CE /* paradiseModel.xcdatamodeld */; };
 		84123A851D145104005DA7CE /* MADIsland+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 84123A821D145104005DA7CE /* MADIsland+CoreDataProperties.m */; };
 		84123A861D145104005DA7CE /* MADIsland.m in Sources */ = {isa = PBXBuildFile; fileRef = 84123A841D145104005DA7CE /* MADIsland.m */; };
 		84123A891D14557E005DA7CE /* MADCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84123A881D14557E005DA7CE /* MADCollectionViewController.m */; };
@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		84123A791D1432E5005DA7CE /* islands.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = islands.json; sourceTree = "<group>"; };
-		84123A7F1D14508C005DA7CE /* paradiceModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = paradiceModel.xcdatamodel; sourceTree = "<group>"; };
+		84123A7F1D14508C005DA7CE /* paradiseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = paradiseModel.xcdatamodel; sourceTree = "<group>"; };
 		84123A811D145104005DA7CE /* MADIsland+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MADIsland+CoreDataProperties.h"; sourceTree = "<group>"; };
 		84123A821D145104005DA7CE /* MADIsland+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MADIsland+CoreDataProperties.m"; sourceTree = "<group>"; };
 		84123A831D145104005DA7CE /* MADIsland.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADIsland.h; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 				8411744C1D129C0400378093 /* CoreData */,
 				8411744B1D129BC600378093 /* Models */,
 				84127C281D0AFBB200FE2614 /* Main.storyboard */,
-				84123A7E1D14508C005DA7CE /* paradiceModel.xcdatamodeld */,
+				84123A7E1D14508C005DA7CE /* paradiseModel.xcdatamodeld */,
 				84127C2B1D0AFBB200FE2614 /* Assets.xcassets */,
 				84127C2D1D0AFBB200FE2614 /* LaunchScreen.storyboard */,
 				84127C301D0AFBB200FE2614 /* Info.plist */,
@@ -338,7 +338,7 @@
 				84123A851D145104005DA7CE /* MADIsland+CoreDataProperties.m in Sources */,
 				84127C241D0AFBB200FE2614 /* AppDelegate.m in Sources */,
 				84123A891D14557E005DA7CE /* MADCollectionViewController.m in Sources */,
-				84123A801D14508C005DA7CE /* paradiceModel.xcdatamodeld in Sources */,
+				84123A801D14508C005DA7CE /* paradiseModel.xcdatamodeld in Sources */,
 				84317D031D0EFDB7006664E4 /* MADDescriptionAnimator.m in Sources */,
 				84317D0D1D1193AC006664E4 /* MADMapAnimator.m in Sources */,
 				84123A861D145104005DA7CE /* MADIsland.m in Sources */,
@@ -505,13 +505,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		84123A7E1D14508C005DA7CE /* paradiceModel.xcdatamodeld */ = {
+		84123A7E1D14508C005DA7CE /* paradiseModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				84123A7F1D14508C005DA7CE /* paradiceModel.xcdatamodel */,
+				84123A7F1D14508C005DA7CE /* paradiseModel.xcdatamodel */,
 			);
-			currentVersion = 84123A7F1D14508C005DA7CE /* paradiceModel.xcdatamodel */;
-			path = paradiceModel.xcdatamodeld;
+			currentVersion = 84123A7F1D14508C005DA7CE /* paradiseModel.xcdatamodel */;
+			path = paradiseModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

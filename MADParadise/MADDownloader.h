@@ -12,6 +12,6 @@
 
 + (instancetype)sharedDownloader;
 
-- (void)loadDataWithURL:(NSURL *)URL complitionBlock:(void(^)(NSData *imageData))complitionBlock;
+- (void)downloadDataWithURL:(NSURL *)URL complitionBlock:(void(^)(NSData *imageData))complitionBlock;
 
 @end
