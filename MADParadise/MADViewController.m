@@ -31,6 +31,8 @@
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
     [_pageViewController didMoveToParentViewController:self];
+    
+    
 }
 
 #pragma mark - Private
@@ -96,5 +98,7 @@
     
     return controller;
 }
+
+
 
 @end

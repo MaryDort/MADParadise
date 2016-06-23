@@ -26,14 +26,11 @@
 @property (nonatomic, readwrite, strong) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic, readwrite, strong) CLLocationManager *locationManager;
 @property (nonatomic, readwrite, strong) CLGeocoder *geocoder;
-@property (assign, nonatomic, readwrite) CLLocationDistance regionRadius;
-@property (strong, nonatomic, readwrite) CLLocation *initialLocation;
 @property (nonatomic, readwrite, strong) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic, readwrite) MADTransitionDelegate *transitionDelegate;
 @property (strong, nonatomic, readwrite) MADMapAnimator *mapAnimator;
 @property (strong, nonatomic, readwrite) MADDescriptionAnimator *descriptionAnimator;
 @property (assign, nonatomic, readwrite) CGSize currentViewSize;
-
 
 @end
 
@@ -161,7 +158,7 @@ static NSString * const reuseIdentifier = @"Cell";
     if (_currentViewSize.width > _currentViewSize.height) {
         return CGSizeMake(_currentViewSize.width/2 - 10.f, _currentViewSize.height);
     }
-    return CGSizeMake(_currentViewSize.width - 10.f, _currentViewSize.height/2);
+    return CGSizeMake(_currentViewSize.width - 10, _currentViewSize.height/2);
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size
