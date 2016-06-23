@@ -22,7 +22,6 @@
 		84127C3D1D0AFCC800FE2614 /* MADCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84127C3B1D0AFCC800FE2614 /* MADCollectionViewCell.xib */; };
 		84127C421D0B039300FE2614 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84127C411D0B039300FE2614 /* MapKit.framework */; };
 		84127C491D0B102E00FE2614 /* MADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84127C481D0B102E00FE2614 /* MADViewController.m */; };
-		842B42FB1D1AD6EA001DF092 /* MADCollectionButtonDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842B42FA1D1AD6EA001DF092 /* MADCollectionButtonDelegate.m */; };
 		84317D001D0EECDF006664E4 /* MADDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84317CFF1D0EECDF006664E4 /* MADDescriptionViewController.m */; };
 		84317D031D0EFDB7006664E4 /* MADDescriptionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 84317D021D0EFDB7006664E4 /* MADDescriptionAnimator.m */; };
 		84317D061D10416D006664E4 /* MADMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84317D051D10416D006664E4 /* MADMapViewController.m */; };
@@ -56,8 +55,6 @@
 		84127C411D0B039300FE2614 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84127C471D0B102E00FE2614 /* MADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADViewController.h; sourceTree = "<group>"; };
 		84127C481D0B102E00FE2614 /* MADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADViewController.m; sourceTree = "<group>"; };
-		842B42F91D1AD6EA001DF092 /* MADCollectionButtonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADCollectionButtonDelegate.h; sourceTree = "<group>"; };
-		842B42FA1D1AD6EA001DF092 /* MADCollectionButtonDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADCollectionButtonDelegate.m; sourceTree = "<group>"; };
 		84317CFE1D0EECDF006664E4 /* MADDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADDescriptionViewController.h; sourceTree = "<group>"; };
 		84317CFF1D0EECDF006664E4 /* MADDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADDescriptionViewController.m; sourceTree = "<group>"; };
 		84317D011D0EFDB7006664E4 /* MADDescriptionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADDescriptionAnimator.h; sourceTree = "<group>"; };
@@ -216,8 +213,6 @@
 				84127C221D0AFBB200FE2614 /* AppDelegate.h */,
 				84127C231D0AFBB200FE2614 /* AppDelegate.m */,
 				84317D0A1D105184006664E4 /* CollectionCellButtonDelegate.h */,
-				842B42F91D1AD6EA001DF092 /* MADCollectionButtonDelegate.h */,
-				842B42FA1D1AD6EA001DF092 /* MADCollectionButtonDelegate.m */,
 			);
 			name = Delegats;
 			sourceTree = "<group>";
@@ -361,7 +356,6 @@
 				84123A891D14557E005DA7CE /* MADCollectionViewController.m in Sources */,
 				84123A801D14508C005DA7CE /* paradiseModel.xcdatamodeld in Sources */,
 				84317D031D0EFDB7006664E4 /* MADDescriptionAnimator.m in Sources */,
-				842B42FB1D1AD6EA001DF092 /* MADCollectionButtonDelegate.m in Sources */,
 				84317D0D1D1193AC006664E4 /* MADMapAnimator.m in Sources */,
 				84123A861D145104005DA7CE /* MADIsland.m in Sources */,
 				84127C3C1D0AFCC800FE2614 /* MADCollectionViewCell.m in Sources */,
