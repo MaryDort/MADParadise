@@ -78,7 +78,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     id <NSFetchedResultsSectionInfo> sectionInfo = self.fetchedResultsController.sections[section];
     
-    NSLog(@"%d", sectionInfo.numberOfObjects);
+    NSLog(@"%lu", (unsigned long)sectionInfo.numberOfObjects);
     
     return sectionInfo.numberOfObjects;
 }

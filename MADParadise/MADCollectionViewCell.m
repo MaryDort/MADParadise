@@ -20,7 +20,7 @@
     self.scrollView.zoomScale = 1;
 }
 
-- (IBAction)locationButtonPressed:(UIButton *)sender {
+- (IBAction)pinButtonPressed:(UIButton *)sender {
     [_delegate didPressPinButtonInCell:self];
 }
 

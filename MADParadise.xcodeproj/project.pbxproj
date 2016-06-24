@@ -121,7 +121,7 @@
 			name = "Animators + Delegats";
 			sourceTree = "<group>";
 		};
-		8411744A1D129B2100378093 /* ViewControllers */ = {
+		8411744A1D129B2100378093 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				84317CFE1D0EECDF006664E4 /* MADDescriptionViewController.h */,
@@ -133,17 +133,17 @@
 				84127C471D0B102E00FE2614 /* MADViewController.h */,
 				84127C481D0B102E00FE2614 /* MADViewController.m */,
 			);
-			name = ViewControllers;
+			name = Controller;
 			sourceTree = "<group>";
 		};
-		8411744B1D129BC600378093 /* Views */ = {
+		8411744B1D129BC600378093 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				84127C391D0AFCC800FE2614 /* MADCollectionViewCell.h */,
 				84127C3A1D0AFCC800FE2614 /* MADCollectionViewCell.m */,
 				84127C3B1D0AFCC800FE2614 /* MADCollectionViewCell.xib */,
 			);
-			name = Views;
+			name = View;
 			sourceTree = "<group>";
 		};
 		8411744C1D129C0400378093 /* CoreData */ = {
@@ -180,16 +180,14 @@
 		84127C1E1D0AFBB200FE2614 /* MADParadise */ = {
 			isa = PBXGroup;
 			children = (
-				84317D071D1047B8006664E4 /* MADPlace.h */,
-				84317D081D1047B8006664E4 /* MADPlace.m */,
+				84DAA37A1D1DBB9A008B138B /* Model */,
+				8411744B1D129BC600378093 /* View */,
+				8411744A1D129B2100378093 /* Controller */,
 				842B42F81D1ABC77001DF092 /* Downloader */,
 				842B42F71D1ABC68001DF092 /* Delegats */,
 				841174491D129ADC00378093 /* Animators + Delegats */,
-				8411744A1D129B2100378093 /* ViewControllers */,
-				8411744C1D129C0400378093 /* CoreData */,
-				8411744B1D129BC600378093 /* Views */,
-				84127C281D0AFBB200FE2614 /* Main.storyboard */,
 				84123A7E1D14508C005DA7CE /* paradiseModel.xcdatamodeld */,
+				84127C281D0AFBB200FE2614 /* Main.storyboard */,
 				84127C2B1D0AFBB200FE2614 /* Assets.xcassets */,
 				84127C2D1D0AFBB200FE2614 /* LaunchScreen.storyboard */,
 				84127C301D0AFBB200FE2614 /* Info.plist */,
@@ -224,6 +222,16 @@
 				84DFF2851D0D917E00CA4882 /* MADDownloader.m */,
 			);
 			name = Downloader;
+			sourceTree = "<group>";
+		};
+		84DAA37A1D1DBB9A008B138B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8411744C1D129C0400378093 /* CoreData */,
+				84317D071D1047B8006664E4 /* MADPlace.h */,
+				84317D081D1047B8006664E4 /* MADPlace.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

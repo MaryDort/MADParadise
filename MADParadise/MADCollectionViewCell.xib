@@ -39,7 +39,7 @@
                         </constraints>
                         <state key="normal" image="locationBotton"/>
                         <connections>
-                            <action selector="locationButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Lu8-3M-nbo"/>
+                            <action selector="pinButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4Np-KK-UG6"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7d-GV-Gq5">
@@ -66,15 +66,15 @@
             </constraints>
             <size key="customSize" width="290" height="333"/>
             <connections>
-                <outlet property="botton" destination="kxX-Yi-3BX" id="zDe-ju-2WF"/>
                 <outlet property="imageView" destination="pzY-r5-Zmn" id="6HM-ed-1SC"/>
                 <outlet property="label" destination="y7d-GV-Gq5" id="cke-b5-aPk"/>
+                <outlet property="pinBotton" destination="kxX-Yi-3BX" id="hOI-ih-0nn"/>
                 <outlet property="scrollView" destination="Oqz-k8-Ihg" id="IpT-XJ-pDe"/>
             </connections>
             <point key="canvasLocation" x="281" y="-1183"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="locationBotton" width="24" height="24"/>
+        <image name="locationBotton" width="32" height="32"/>
     </resources>
 </document>
