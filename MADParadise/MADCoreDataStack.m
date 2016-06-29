@@ -47,7 +47,6 @@
                                                              URL:storeURL
                                                          options:nil
                                                            error:&error]) {
-        
         NSLog(@"%@", [error description]);
     }
     
