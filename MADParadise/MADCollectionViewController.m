@@ -19,7 +19,6 @@
 #import "MADMapAnimator.h"
 #import "CollectionCellButtonDelegate.h"
 #import "UICollectionView+NSFetchedResultsController.h"
-#import "MADQuestionsViewController.h"
 
 @interface MADCollectionViewController () <NSFetchedResultsControllerDelegate, UICollectionViewDelegateFlowLayout, CollectionCellButtonDelegate>
 
@@ -51,7 +50,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     _locationManager = [[CLLocationManager alloc] init];
     [_locationManager requestWhenInUseAuthorization];
     
@@ -68,12 +67,6 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewWillLayoutSubviews];
     
     _currentViewSize = self.view.frame.size;
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    NSLog(@"%ld", (long)[[UIDevice currentDevice] orientation]);
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -208,7 +201,9 @@ static NSString * const reuseIdentifier = @"Cell";
                                                                              message:@"🙀"
                                                                     preferredStyle:UIAlertControllerStyleAlert];
             
-            [alertVC addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {}]];
+            [alertVC addAction:[UIAlertAction actionWithTitle:@"Ok"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction *action) {}]];
             [self presentViewController:alertVC animated:YES completion:nil];
         } else {
             [self configureMap:placemarks];
